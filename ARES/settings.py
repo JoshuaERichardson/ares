@@ -11,9 +11,13 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+from apps.chatter_box.apps import ChatterBoxConfig as chatter_box
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# The problem is we are running this file from a different directory than the one it is in.
+# We need to change the BASE_DIR to reflect the correct directory.
+BASE_DIR = "C:\\Users\\jrich\\Desktop\\coding\\ares chatbot\\ares\\apps\\chatter_box"
 
 
 # Quick-start development settings - unsuitable for production
